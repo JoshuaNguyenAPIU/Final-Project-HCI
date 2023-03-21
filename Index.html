@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forms</title>
+<style>
+    #Form1 {
+        background-color: cadetblue;
+        width: 70%;
+        padding: 20px;
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 5px;
+    }
+    p {
+        margin-left: 70px;
+        color: white;
+
+    }
+
+    h3 {
+        text-align: center;
+
+    }
+
+    #Form2 {
+        background-color: blanchedalmond;
+        width: 70%;
+        appearance: none;
+        border-radius: 5px;
+        padding: 3%;
+        margin-top: 15px;
+ 
+    }
+
+    .avatar {
+        vertical-align: right;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        float: right;
+        padding: 20px;
+        margin-right: 40px;
+    }
+
+    section {
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+  
+    #text {
+        border-radius: 2px;
+        size: 12px;
+        text-align: left;
+        width: 20%;
+        border-style: none;
+        padding: 5px;
+        margin-left: 40px;
+    }
+    #coursesOption {
+        border-radius: 2px;
+        size: 10px;
+        text-align: left;
+        width: 21.5%;
+        border-style: none;
+        padding: 5px;
+        margin-left: 40px;
+    }
+
+
+    #Register {
+        background-color: rgb(214, 214, 214);
+        border: none;
+        color: rgb(0, 0, 0);
+        padding: 8px 19px;
+        text-decoration: none;
+        margin-left: 150px;
+        margin-bottom: 20px;
+    }
+    #Cancel {
+        background-color: rgb(30, 30, 30);
+        border: none;
+        color: white;
+        padding: 8px 19px;
+        text-decoration: none;
+        margin: 0px 150px;
+
+    }
+
+    label {
+        margin-left: 40px;
+        color: rgb(3, 49, 143);
+    }
+
+
+    .SecondForm {
+        display: flex;
+        justify-content: center;
+    }
+
+    .SizeSelector {
+        font-size: 10px;
+    }
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+    <div class="FirstForm">
+    <form name="Form1" method="Form" id="Form1">
+        <p>Student Name: .........................................</p>
+        <p>Student ID: ..............................................</p>
+        <p>Date: .........................................................</p>
+    </form>
+    </div><br>
+
+    <!-- adding the title -->
+    <section>
+    <h3>CREATE THE FOLLOWING FORMS</h3>
+    </section>
+
+    <div class="SecondForm">
+    <form name="Sample" method="Form" id="Form2" action="">
+    
+    <fieldset>
+    <legend>Student Details</legend>
+        
+    <section>
+      <!-- Adding gender option section for the form -->
+      <input type="radio" name="option" value="offline" id="option1"> Offline
+      <input type="radio" name="option" value="Online" id="option2"> Online
+    </section>
+    
+    <img src="avatar.png" alt="avatar" class="avatar"><br>
+
+    <input type="text" name="name" id="text" placeholder="Enter your name" size="40">
+    <br><br>
+    
+    <select name="courses" id="coursesOption">
+        <option value="CourseTaking">*courses taking</option>
+        <option value="Management">Management Information</option>
+        <option value="Character">Character Development</option>
+        <option value="Linux">Linux System</option>
+    </select>
+    <br><br>
+    
+
+    <label class="container">Front End Web
+        <span class="checkmark"></span>
+        <input type="checkbox" checked="checked">
+        <br><br>
+    </label>
+    <label class="container">Linux
+        <span class="checkmark"></span>
+        <input type="checkbox">
+        <br><br>
+    </label>
+    <label class="container">Networking
+        <span class="checkmark"></span>
+        <input type="checkbox" checked="checked">
+        <br><br>
+    </label>
+    <br>
+
+        <input type="submit" value="Register" id="Register" size="10">
+        <input type="submit" value="Cancel" id="Cancel" size="10">
+    </fieldset>
+    </form>
+</div>
+</body>
+</html>
